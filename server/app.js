@@ -1,8 +1,16 @@
-const express = require('express')
-const app = express()
-const port = 3000
+const express = require("express");
+const app = express();
+const port = 3000;
+const bodyParser = require("body-parser");
+var morgan = require("morgan");
 
-app.get('/', (req, res) => res.send('Hello World!'))
+app.use(bodyParser.urlencoded({
+    extended:true
+}));
+app.use(bodyParser.json());
+app.use(morgan("dev"));
 
-app.listen(port, ()=> console.log(`the app listening on port ${port}`))
+var {matrix, ifPercolation} = require("./runtests/runPercolation")(3);
 
+app.get("/", (req, res) => res.send(matrix, ifPercolation));
+app.listen(port, ()=> console.log(`the app listening on port ${port}`));
