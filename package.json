@@ -1,0 +1,30 @@
+{
+  "name": "myalgorithms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "server": "nodemon --watch server --exec 'node server/app.js'",
+    "dev": "node server/app.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "author": "xiaojie si",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "eslint": "^5.16.0",
+    "express": "^4.17.1",
+    "isomorphic-unfetch": "^3.0.0",
+    "morgan": "^1.9.1",
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.4.5",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "nodemon": "^1.19.1"
+  }
+}
