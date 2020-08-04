@@ -2,7 +2,7 @@ const fs = require("fs");
 const readline = require("readline");
 const routes = require("./../../share/routes");
 const path = require("path");
-const {QuickUnionUF} = require("./../utilities/general");
+const {QuickUnionUF} = require("./../utilities/findUnion");
 
 module.exports = async () =>{
     const filename = path.join(routes.PUBLIC_TEXTS_PATH, "uf.txt");

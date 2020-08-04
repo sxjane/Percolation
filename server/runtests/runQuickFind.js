@@ -1,4 +1,4 @@
-const {QuickFindUF} = require("./../utilities/general");
+const {QuickFindUF} = require("./../utilities/findUnion");
 const publicFilePath = require("./../../share/routes").PUBLIC_TEXTS_PATH;
 const readline = require("readline");
 const fs = require("fs");

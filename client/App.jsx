@@ -1,10 +1,22 @@
 import React from "react";
+import Canvas from "./components/Canvas";
+import Header from "./components/Header";
+import { text } from "express";
+
 export default class App extends React.Component{
+    constructor(props){
+        super(props);
+        this.getMatrix = this.getMatrix.bind(this);
+    }
+
+    getMatrix(){
+        console.log('getMatrix');
+        return <Canvas />;
+    }
+
     render(){
         return(
-            <div>
-                <h1>Hello ReactJS & NodeJS & Hello</h1>
-            </div>
+            <button onClick={this.getMatrix}>Click</button>
         );
     }
 }

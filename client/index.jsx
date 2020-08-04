@@ -1,16 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
-const name = "Josh Perez";
+// import App from "./App";
+// import Canvas from "./components/Canvas";
+import Header from "./components/Header"
 
-const element = <h1>Hello, {name}</h1>;
-
-// function App(){
-//     return <h2>Hello</h2>;
+// class Header extends React.Component{
+//     render(){
+//         return <h1>Hello React</h1>
+//     }
 // }
-
-
+const element = <h1>Hello Element</h1>
 ReactDOM.render(
-    <App/>,
+    <Header/>,
     document.getElementById("react")
 );

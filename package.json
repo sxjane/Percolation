@@ -4,23 +4,35 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "server": "nodemon --watch server --exec 'node server/app.js'"
+    "server": "nodemon --watch server --exec 'node server/app.js'",
+    "build": "webpack --mode production",
+    "client": "webpack --progress --mode development --colors --watch",
+    "start": "webpack-dev-server --open --mode development",
+    "dev": "webpack --mode development && node server/app.js"
   },
   "author": "xiaojie si",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.0",
-    "eslint": "^5.16.0",
     "express": "^4.17.1",
-    "isomorphic-unfetch": "^3.0.0",
-    "morgan": "^1.9.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
+    "morgan": "^1.9.1",
+    "eslint": "^5.16.0",
+    "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
-    "babel-core": "^6.26.3",
+    "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.1",
-    "nodemon": "^1.19.1"
+    "babel-loader": "^8.0.6",
+    "css-loader": "^2.1.1",
+    "eslint-plugin-react": "^7.13.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "nodemon": "^1.19.1",
+    "webpack": "^4.33.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.6.0"
   }
 }
