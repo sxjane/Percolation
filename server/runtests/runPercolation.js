@@ -71,8 +71,8 @@ module.exports = (n)=>{
            
         }
     }
-    console.log(matrix);
-    console.log(uf.array);
+    //console.log(matrix);
+    //console.log(uf.array);
     var percolation = console.log(uf.connected(virtualTop, virtualBottom));
     return {matrix, percolation};
 };
