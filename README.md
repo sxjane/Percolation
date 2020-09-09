@@ -1,6 +1,6 @@
-npm run server  // starts the server 
-npm run client  // build the client 
-https://localhost:3000  //access the website 
+Start the server: npm run server  
+Start the client: npm run client
+Access the website: https://localhost:3000  
 
 The server randomly creates an array in terms of the input from the client. 
 The client displays values of the received array by transforming 1 into white squares and 0 into black squares.
