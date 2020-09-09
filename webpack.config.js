@@ -35,17 +35,13 @@ module.exports = {
             }
         ]
     },
-    // resolve: {
-    //     modules: [
-    //         "node_modules",
-    //          path.resolve(__dirname, "client")
-    //     ],
-    //     extensions: [".js", ".json", ".jsx", ".css"]
-    // },
+    resolve: {
+        extensions: [".js", ".json", ".jsx", ".css"]
+    },
     plugins: [
         new HtmlWebPackPlugin({
             template: path.resolve(PATHS.app, "index.html"),
         })
-    ],
-    target: "node"
+    ]
+    // target: "node"
 };

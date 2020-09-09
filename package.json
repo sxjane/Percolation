@@ -6,8 +6,7 @@
   "scripts": {
     "server": "nodemon --watch server --exec 'node server/app.js'",
     "build": "webpack --mode production",
-    "client": "webpack --progress --mode development --colors --watch",
-    "start": "webpack-dev-server --open --mode development",
+    "client": "webpack --progress --mode development --colors --watch --display-error-details",
     "dev": "webpack --mode development && node server/app.js"
   },
   "author": "xiaojie si",

@@ -25,19 +25,5 @@ app.get("/matrix", (req, res) => {
     res.send({inputRows, matrix, ifTrue});
 });
 
-// app.put("/matrix", (req, res) => {
-//     let body = req.body;
-//     let inputRows = body.inputRows;
-//     let {matrix, ifTrue} = require("./runtests/runPercolation")(inputRows);
-//     let objIfTrue;
-//     if(ifTrue){
-//         objIfTrue = {"ifTrue": true};
-//     }else{
-//         objIfTrue = {"ifTrue": false};
-//     }
-//     res.send({inputRows, matrix, objIfTrue});
-//     console.log(inputRows);
-// });
-
 app.listen(port, ()=> console.log(`the app listening on port ${port}`));
   
