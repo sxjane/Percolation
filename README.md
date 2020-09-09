@@ -1,5 +1,7 @@
 Start the server: npm run server  
+
 Start the client: npm run client
+
 Access the website: https://localhost:3000  
 
 The server randomly creates an array in terms of the input from the client. 
